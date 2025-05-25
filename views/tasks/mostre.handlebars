@@ -1,0 +1,18 @@
+
+<h1>Visão geral da Task: {{task.title}}</h1> {{!-- O {{task.title}} é um placeholder do Handlebars que será substituído pelo título real da tarefa após renderizado, mostra qual item está sendo mostrado. --}}
+<form action="/tasks/mostre" class="btnback" method="post"> 
+    
+    <div class="form-control">
+        <label for="title">Título:</label>
+        <input disabled type="text" name="title" placeholder="o que você deseja fazer?" value="{{task.title}}"> 
+    </div>
+
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+        <textarea disabled name="description" placeholder="Descreva a tarefa..">{{task.description}}</textarea>
+    </div>
+    <a href="/tasks">Voltar</a>
+</form>
+
+{{!-- O value="{{task.title}}" pré-preenche o campo com o título atual da tarefa, oferecendo uma referência visual para o usuário. --}}
+{{!-- O conteúdo entre as tags <textarea> usa {{task.description}} para exibir a descrição atual, facilitando a edição. --}}

@@ -1,0 +1,20 @@
+
+<h1>Editando a Task: {{task.title}}</h1> {{!-- O {{task.title}} é um placeholder do Handlebars que será substituído pelo título real da tarefa quando o template for renderizado. Isso deixa claro para o usuário qual item está em edição. --}}
+<form action="/tasks/edit" method="post"> {{!-- O método POST é usado para enviar os dados de atualização, garantindo que as informações sensíveis (como o ID da tarefa) não fiquem expostas na URL. --}}
+    
+    <input type="hidden" name="id" value="{{task.id}}"> {{!-- Armazena de forma oculta o identificador da tarefa que está sendo editada. Detalhe: Mesmo sem a exibição ao usuário, esse campo é fundamental, pois informa ao backend exatamente qual tarefa deve ser atualizada quando o formulário for submetido. --}}
+    
+    <div class="form-control">
+        <label for="title">Título:</label>
+        <input type="text" name="title" placeholder="o que você deseja fazer?" value="{{task.title}}"> 
+    </div>
+
+    <div class="form-control">
+        <label for="description">Descrição:</label>
+        <textarea name="description" placeholder="Descreva a tarefa..">{{task.description}}</textarea>
+    </div>
+    <input type="submit" value="Editar"> {{!-- Cria um botão que, ao ser clicado, submete o formulário com os dados atualizados da tarefa. --}}
+</form>
+
+{{!-- O value="{{task.title}}" pré-preenche o campo com o título atual da tarefa, oferecendo uma referência visual para o usuário. --}}
+{{!-- O conteúdo entre as tags <textarea> usa {{task.description}} para exibir a descrição atual, facilitando a edição. --}}
