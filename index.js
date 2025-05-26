@@ -12,7 +12,7 @@ import tasksRoutes from './routes/tasksRoutes.js'
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 
-//midleware para conseguir ler o que vem no corpo da req
+//midleware para conseguir ler o que vem no corpo da requisicao
 app.use( 
     express.urlencoded({
         extended: true
