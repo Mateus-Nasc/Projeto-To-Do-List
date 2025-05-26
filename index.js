@@ -12,7 +12,7 @@ import tasksRoutes from './routes/tasksRoutes.js'
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 
-//midleware para conseguir ler oq vem no corpo da req
+//midleware para conseguir ler o que vem no corpo da req
 app.use( 
     express.urlencoded({
         extended: true
@@ -22,7 +22,7 @@ app.use(
 app.use(express.json())
 app.use(express.static('public'))
 
-//Usa as rotas definidas no file tasksRoutes.js, aplicando tds as rotas relacionadas a tarefas sob o caminho /tasks.
+//Usa as rotas definidas no file tasksRoutes.js, aplicando todas as rotas relacionadas a tarefas sob o caminho /tasks.
 app.use('/tasks', tasksRoutes)
 
 conn.sync()

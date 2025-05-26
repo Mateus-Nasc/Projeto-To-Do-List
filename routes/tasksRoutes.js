@@ -2,7 +2,7 @@
 import express from 'express' //Importa o framework Express.
 const router = express.Router() //Cria objeto router, q permite definir rotas separadamente do aplicativo principal.
 
-//Importa o controlador de tarefas, q contém a lógica para manipular requisições HTTP relacionadas às tarefas.
+//Importa o controlador de tarefas, que contém a lógica para manipular requisições HTTP relacionadas às tarefas.
 import TaskController from '../controllers/TaskController.js'
 
 //Definição das Rotas
