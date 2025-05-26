@@ -14,15 +14,15 @@ MySQL2 – Driver para comunicação com MySQL.
 Nodemon – Ferramenta para recarregar automaticamente o servidor durante o desenvolvimento.
 
 Instalação e Configuração:
-1. Clonar o repositório
+1. Clonar o repositório:
 git clone <https://github.com/Mateus-Nasc/Projeto-To-Do-List>
 cd nome-do-repositorio
-2. Instalar dependências
+2. Instalar dependências:
 npm install
-3. Configurar o banco de dados
+3. Configurar o banco de dados:
 Certifique-se de que o MySQL está rodando e crie um banco de
 dados chamado nodemvc2.
-4. Rodar o projeto
+4. Rodar o projeto:
 npm start
 
 Estrutura de Pastas:
