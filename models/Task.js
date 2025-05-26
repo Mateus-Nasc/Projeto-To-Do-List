@@ -21,5 +21,5 @@ const Task = conn.define('Task', {
 export default Task
 
 
-// obs: required: true não é uma opção válida do Sequelize para definir obrigatoriedade.
-// O correto seria => allowNull: false, para garantir que os campos não fiquem vazios.
+// obs: required: true, não é uma opção válida do Sequelize para definir obrigatoriedade.
+// O correto é utilizar => allowNull: false, para garantir que os campos não fiquem vazios.
