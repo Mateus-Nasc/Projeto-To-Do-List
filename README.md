@@ -19,7 +19,7 @@ Nodemon – Ferramenta para recarregar automaticamente o servidor durante o dese
 
 1. Clonar o repositório:
 git clone <https://github.com/Mateus-Nasc/Projeto-To-Do-List>
-cd nome-do-repositorio no caso cd Projeto-To-Do-List
+cd nome-do-repositorio
 2. Instalar dependências:
 npm install
 3. Configurar o banco de dados:
