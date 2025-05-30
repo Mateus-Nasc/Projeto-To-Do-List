@@ -6,7 +6,6 @@ projeto segue o padrão MVC (Model-View-Controller), garantindo: Separação ent
 para gerenciar tarefas usando Node.js, Express, Sequelize e MySQL.
 
 ## Tecnologias Utilizadas:
-
 Node.js – Plataforma para execução do JavaScript no backend.
 Express.js – Framework para criar e gerenciar rotas de forma eficiente.
 Handlebars – Template engine para renderizar páginas dinâmicas.
@@ -16,7 +15,6 @@ MySQL2 – Driver para comunicação com MySQL.
 Nodemon – Ferramenta para recarregar automaticamente o servidor durante o desenvolvimento.
 
 ## Instalação e Configuração:
-
 1. Clonar o repositório:
 git clone <https://github.com/Mateus-Nasc/Projeto-To-Do-List>
 cd nome-do-repositorio
@@ -29,7 +27,6 @@ dados chamado nodemvc2.
 npm start
 
 ## Estrutura de Pastas:
-
 📂 projeto-To-Do-List
 ├── 📂 db
 │ ├── conn.js  #Conexão com banco de dados MySQL
