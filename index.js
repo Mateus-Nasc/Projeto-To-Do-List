@@ -1,6 +1,8 @@
 import express from "express"
 import exphbs from "express-handlebars"
 import conn from "./db/conn.js"
+import cookieParser from "cookie-parser";
+
 
 const app = express()
 
@@ -8,6 +10,8 @@ import Task from "./models/Task.js" //Import o modelo Task para interagir com ta
 
 //Importa as rotas tasksRoutes, que definem endpoints para manipular tarefas.
 import tasksRoutes from './routes/tasksRoutes.js'
+import authRoutes from "./routes/authRoutes.js";
+
 
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
@@ -21,9 +25,14 @@ app.use(
 
 app.use(express.json())
 app.use(express.static('public'))
+// Para ler cookies
+app.use(cookieParser());
+
 
 //Usa as rotas definidas no file tasksRoutes.js, aplicando todas as rotas relacionadas a tarefas sob o caminho /tasks.
 app.use('/tasks', tasksRoutes)
+app.use("/", authRoutes);
+
 
 conn.sync()
 .then(() => {

@@ -1,6 +1,15 @@
 
+
 import express from 'express' //Importa o framework Express.
 const router = express.Router() //Cria objeto router, q permite definir rotas separadamente do aplicativo principal.
+
+//utilizando o middleware de autenticação para proteger todas as rotas que devem ser acessadas somente por usuários autenticados
+import { authenticateToken } from "../middlewares/authentMiddleware.js";
+
+// Aplica o middleware para todas as rotas definidas abaixo
+router.use(authenticateToken);
+// Com isso, quando o usuário tentar acessar qualquer rota sob /tasks, a aplicação verificará a validade do token armazenado no cookie
+
 
 //Importa o controlador de tarefas, que contém a lógica para manipular requisições HTTP relacionadas às tarefas.
 import TaskController from '../controllers/TaskController.js'

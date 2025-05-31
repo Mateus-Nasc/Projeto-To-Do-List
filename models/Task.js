@@ -2,6 +2,7 @@
 import DataTypes from "sequelize"//tipos de dados do Sequelize, permitindo definir os atributos do modelo.
 import conn from "../db/conn.js"//conexão com o banco de dados
 
+
 //Cria o modelo Task, que representa uma tabela no banco de dados.
 const Task = conn.define('Task', {
     title: {
