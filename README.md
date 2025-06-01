@@ -2,7 +2,7 @@
 
 Projeto To-Do-List é um projeto que tem a finalidade de organizar melhor suas tarefas do cotidiano, permitindo criar lista de tarefas, exclui-las, edita-las, verifica-las, marca-las se já realizadas e desmarca-las se não realizadas.
 
-##futuras implementações:
+## futuras implementações:
 1- Tela de login
 2- Tela de registro
 3- autenticação JWT
