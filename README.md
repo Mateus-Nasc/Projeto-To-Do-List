@@ -2,11 +2,6 @@
 
 Projeto To-Do-List é um projeto que tem a finalidade de organizar melhor suas tarefas do cotidiano, permitindo criar lista de tarefas, exclui-las, edita-las, verifica-las, marca-las se já realizadas e desmarca-las se não realizadas.
 
-## futuras implementações:
-1- Tela de login
-2- Tela de registro
-3- autenticação JWT
-
 projeto segue o padrão MVC (Model-View-Controller), garantindo: Separação entre lógica de negócios (Model), controle das requisições (Controller) e exibição para o usuário (View). Fornece uma estrutura 
 para gerenciar tarefas usando Node.js, Express, Sequelize e MySQL.
 
@@ -46,3 +41,9 @@ npm start
 ├── 📂 public  #Arquivos estáticos (CSS, JS)
 ├── index.js  #Configuração principal do servidor
 ├── package.json  #Dependências e scripts do projeto
+
+## futuras implementações:
+1- Tela de login
+2- Tela de registro
+3- autenticação JWT
+
