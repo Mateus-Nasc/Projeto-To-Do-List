@@ -42,4 +42,6 @@ npm start
 ├── index.js  #Configuração principal do servidor
 ├── package.json  #Dependências e scripts do projeto
 
-### implementando tela de login e autenticação JWT
+### Realizando alterações :
+1. implementando tela de login e registro
+2. implementando autenticação JWT
