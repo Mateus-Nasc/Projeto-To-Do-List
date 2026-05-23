@@ -17,6 +17,7 @@ Nodemon – Ferramenta para recarregar automaticamente o servidor durante o dese
 
 ## Instalação e Configuração:
 
+<<<<<<< HEAD
 1. Clonar o repositório:
    git clone <https://github.com/Mateus-Nasc/Projeto-To-Do-List>
    cd nome-do-repositorio
@@ -33,3 +34,24 @@ Nodemon – Ferramenta para recarregar automaticamente o servidor durante o dese
 1- Tela de login
 2- Tela de registro
 3- autenticação JWT
+=======
+## Estrutura de Pastas:
+📂 projeto-To-Do-List
+├── 📂 db
+│ ├── conn.js  #Conexão com banco de dados MySQL
+├── 📂 models
+│ ├── Task.js  #Modelo da entidade Task
+├── 📂 controllers
+│ ├── TaskController.js  #Lógica para manipular tarefas
+├── 📂 routes
+│ ├── tasksRoutes.js  #Definição das rotas para tarefas
+├── 📂 views
+│ ├── tasks  #Templates HandleBars
+├── 📂 public  #Arquivos estáticos (CSS, JS)
+├── index.js  #Configuração principal do servidor
+├── package.json  #Dependências e scripts do projeto
+
+### Realizando alterações :
+1. implementando tela de login e registro
+2. implementando autenticação JWT
+>>>>>>> b99b95018291f3ae65704515115f7554a07cd13e

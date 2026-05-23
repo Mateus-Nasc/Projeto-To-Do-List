@@ -1,5 +1,4 @@
-
-# # Ignora o diretório de dependências
+# Ignora o diretório de dependências
 node_modules/
 
 # Ignora arquivos de ambiente
