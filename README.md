@@ -41,3 +41,9 @@ npm start
 ├── 📂 public  #Arquivos estáticos (CSS, JS)
 ├── index.js  #Configuração principal do servidor
 ├── package.json  #Dependências e scripts do projeto
+
+## futuras implementações:
+1- Tela de login
+2- Tela de registro
+3- autenticação JWT
+
